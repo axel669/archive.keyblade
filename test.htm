@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>KeybladeJS</title>
+		<script src="http://rawgit.com/axel669/Architect/master/architect.js"></script>
+		<script src="keyblade.js"></script>
+	</head>
+	<body>
+		<script>
+		Keyblade.bind("ctrl+a",function(){console.log("pushed!");});
+		Keyblade.bind(Keyblade.konamiCode,function(){
+			console.log("konami code");
+		});
+		Keyblade.bindWord("megaman",function(){
+			console.log("super fighting robot");
+		});
+		console.log(Keyblade.isBound("ctrl+a"));
+		console.log(Keyblade.isBoundWord("megaman"));
+		</script>
+	</body>
+</html>
